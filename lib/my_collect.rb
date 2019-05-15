@@ -10,5 +10,6 @@ def my_collect
   end
   else
     puts "Where in the hell is my block?"
+  end
 end
 
