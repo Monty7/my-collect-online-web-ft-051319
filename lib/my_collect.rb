@@ -7,7 +7,6 @@ def my_collect
       i = i + 1 
     end
     collect
-
   else
     puts "Where in the hell is my block?"
   end
