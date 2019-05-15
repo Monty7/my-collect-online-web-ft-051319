@@ -1,10 +1,14 @@
-def my_collect(array)
-  i = 0 
-  collect = []
-  while i < array.length 
-    collect << yield(array[i])
-    i = i + 1 
+def my_collect
+  if block_given?
+    i = 0 
+    collect = []
+    while i < array.length 
+      collect << yield(array[i])
+      i = i + 1 
+    end
+    collect
   end
-  collect
+  else
+    puts "Where in the hell is my block?"
 end
 
